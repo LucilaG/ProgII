@@ -1,18 +1,14 @@
 
 public class ObraSocial {
-	private double precio;
+	private double descuento;
 	private String obraSocial;
 	
-	public double getPrecio(Medicamento medicamento) {
-		obraSocial.toLowerCase();
-		if(this.obraSocial == "prepaga") {
-			this.precio = medicamento.getPrecio()*0.4 ;
-		}else if(this.obraSocial == "sindical") {
-			this.precio = medicamento.getPrecio()*0.5 ;
-		}else {
-			this.precio = medicamento.getPrecio() ;
-		}
-		return precio;
+	public ObraSocial(double descuento, String obraSocial ) {
+		this.descuento = descuento;
+		this.obraSocial = obraSocial;
+	}
+	public double getDescuento() {
+		return descuento;
 	}
 
 	public String getObraSocial() {
@@ -23,7 +19,7 @@ public class ObraSocial {
 		this.obraSocial = obraSocial;
 	}
 
-	public void setPrecio(double precio) {
-		this.precio = precio;
+	public void setDescuento(double descuento) {
+		this.descuento = descuento;
 	}
 }

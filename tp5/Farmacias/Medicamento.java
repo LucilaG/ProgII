@@ -27,7 +27,9 @@ public String getNombre() {
 public void setNombre(String nombre) {
 	this.nombre = nombre;
 }
-
+public boolean trataSintoma(String sintoma) {
+	return sintomasATratar.contains(sintoma);
+}
 
 }
 
